@@ -1,0 +1,26 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded">
+ <Page.actionBar>
+    <ActionBar title="{N}atty Chat" cssClass="custom-action-bar">
+    </ActionBar>
+  </Page.actionBar>
+ <GridLayout columns="*" rows="*,auto">
+    <ListView row="0" items="{{ messages }}" separatorColor="white">
+        <ListView.itemTemplate>
+            <GridLayout columns="auto,*,auto" rows="*,auto" width="100%">
+                 <Image row="0" col="0" src="{{ avatarUrl }}" cssClass="avatar" stretch="aspectFit"   opacity="{{ !isIncoming ? 0 : 1 }}"  />
+                 <StackLayout row="0" col="1">
+                    <Label text="{{ text }}" textWrap="true" cssClass="{{ isIncoming ? 'incomingMessage' : 'outgoingMessage' }}" horizontalAlignment="{{ isIncoming ? 'left' : 'right' }}" ></Label> 
+                 </StackLayout>
+                 <Image row="0" col="2" src="{{ avatarUrl }}" cssClass="avatar" stretch="aspectFit" opacity="{{ isIncoming ? 0 : 1 }}"  /> 
+                 <StackLayout row="1" col="1">
+                     <Label row="1" column="1" text="{{ sentOn }}" cssClass="messageDateTime" horizontalAlignment="{{ isIncoming ? 'left' : 'right' }}" />
+                 </StackLayout>
+            </GridLayout>
+        </ListView.itemTemplate>
+    </ListView>
+    <GridLayout row="1" columns="*,auto" rows="*" width="100%">
+        <TextField col="0"  cssClass="messageInput" returnKeyType="done" returnPress="{{ sendMessage }}" text="{{ newMessage }}" hint="Type a Message"/>
+        <Button col="1" text="Send" tap="{{ sendMessage }}" isEnabled="{{ newMessage != ''}}" /> 
+    </GridLayout>
+ </GridLayout>
+</Page>

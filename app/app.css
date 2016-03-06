@@ -1,0 +1,63 @@
+﻿.custom-action-bar {
+    background-color: #03A9F4;
+    color: white;
+}
+
+button{
+    color: white;
+    background-color: gray;
+    border-radius: 5;
+    border-width: 1;
+    padding: 10;
+    margin: 10;
+}
+
+.avatar{
+    border-radius: 15;
+    border-width: 1;
+    border-color: #03A9F4;
+    margin: 10;
+    min-width:20;
+    width: 30;
+    height: 30;
+    
+}
+
+
+.incomingMessage {
+    color: white;
+    background-color: #03A9F4;
+    /*horizontal-align: left;*/
+    border-radius: 5;
+    padding: 15;
+    margin-bottom: 5;
+    margin-top: 10;
+    font-size: 10;
+    /*margin-right:60;*/
+
+}
+
+.outgoingMessage {
+    color: black;
+    background-color: whitesmoke;
+    /*horizontal-align: right;*/
+    text-align: right;
+    border-radius: 5;
+    padding: 15;
+    margin-bottom: 5;
+    margin-top: 10;
+    font-size: 10;
+    /*margin-left:60;*/
+}
+
+.messageDateTime {
+    font-size: 7;
+    color: lightslategray;
+    margin-bottom: 5;
+    /*margin-left:50;*/
+    /*margin-right:50;*/
+}
+
+.messageInput {
+    margin-left: 5;
+}
