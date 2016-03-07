@@ -1,4 +1,7 @@
-<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded">
+<Page xmlns="http://schemas.nativescript.org/tns.xsd"
+      xmlns:s="nativescript-statusbar"
+      loaded="pageLoaded">
+ <s:StatusBar ios:barStyle="light" android:barStyle="#00A7F7" />
  <Page.actionBar>
     <ActionBar title="{N}atty Chat" cssClass="custom-action-bar">
     </ActionBar>
