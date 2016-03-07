@@ -4,4 +4,4 @@ A little compare and contrast sample application between [NativeScript](https://
 
 Make sure to check the accompanying [Medium story](https://medium.com/@lkrenek/xamarin-vs-nativescript-custom-list-view-cells-806ea9f7f9df#.yv4zgx8cx) for more details.
 
-![alt txt](https://raw.githubusercontent.com/krenhammer/ns-custom-lv-cells/master/NativeScriptSolution.png)
+![alt txt](https://cloud.githubusercontent.com/assets/686963/13575609/67ce7926-e44f-11e5-9ed8-d64632e6cd95.png)
